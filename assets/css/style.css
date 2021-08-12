@@ -12,13 +12,20 @@ html {
 
 /* Header */
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 46px;
   background-color: black;
+  z-index: 100;
+  box-shadow: 0 0 10px #000;
 }
 
 .nav {
   display: inline-block;
+  font-size: 0px;
 }
 
 .nav > li {
@@ -27,6 +34,7 @@ html {
 
 .nav li a {
   text-decoration: none;
+  font-size: 16px;
   line-height: 46px;
   padding: 0 24px;
   display: block;
@@ -77,12 +85,121 @@ html {
   padding: 0 21px;
 }
 
-#header .search:hover{
+#header .search:hover {
   background-color: #f44336;
   cursor: pointer;
 }
 
+/* Slider */
 #slider {
-  height: 1000px;
-  background-color: blanchedalmond;
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/TheBand/assets/img/slider/chicago.jpg") top center / cover
+    no-repeat;
+}
+#slider .text {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 32px;
+}
+#slider p {
+  padding: 12.5px;
+  color: white;
+}
+#slider .heading-text {
+  font-size: 24px;
+}
+
+#slider .sub-heading-text {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Content */
+#content {
+}
+
+#content .content-section {
+  padding: 64px 0;
+  width: 800px;
+  margin: auto;
+}
+
+#content .section-heading {
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+#content .section-sub-heading {
+  text-align: center;
+  line-height: 1.5;
+  opacity: 0.5;
+  font-size: 15px;
+  font-style: italic;
+  margin: 0 0 15px;
+}
+
+#content .about-text {
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+#content .member {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 47px;
+}
+
+#content .name-member {
+  margin: 15px;
+}
+
+#content .img-member {
+  width: 154px;
+  border-radius: 4px;
+}
+
+/* Tour section */
+.tour-dates {
+  background-color: black;
+}
+.tour-dates .section-heading,
+.tour-dates .section-sub-heading {
+  color: white;
+}
+.tour-dates .cart{
+  background-color: white;
+}
+
+.tour-dates .cart-list {
+padding: 8px 16px;
+border-bottom: 1px solid #ddd;
+}
+
+.tour-dates .cart-list .sold-out{
+  padding: 3px 5px;
+  margin: auto 16px;
+  background-color: #f44336;
+  color: white;
+}
+
+.tour-dates .cart-list .quantity{
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 100%;
+  margin: -3px;
 }
