@@ -10,6 +10,32 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Common */
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+  display: flex;
+}
+
+.col {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-full{
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.col-hafl {
+  width: 50%;
+}
+
+.col-third {
+  width: 33.33333%;
+}
+
 /* Header */
 #header {
   position: fixed;
@@ -120,8 +146,6 @@ html {
 }
 
 /* Content */
-#content {
-}
 
 #content .content-section {
   padding: 64px 0;
@@ -153,7 +177,6 @@ html {
 }
 
 #content .member {
-  display: flex;
   justify-content: space-around;
   text-align: center;
   padding-top: 47px;
@@ -176,23 +199,25 @@ html {
 .tour-dates .section-sub-heading {
   color: white;
 }
-.tour-dates .cart{
+.tour-dates .cart {
   background-color: white;
+  list-style: none;
 }
 
 .tour-dates .cart-list {
-padding: 8px 16px;
-border-bottom: 1px solid #ddd;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  color: rgba(0,0,0,0.7)
 }
 
-.tour-dates .cart-list .sold-out{
+.tour-dates .cart-list .sold-out {
   padding: 3px 5px;
   margin: auto 16px;
   background-color: #f44336;
   color: white;
 }
 
-.tour-dates .cart-list .quantity{
+.tour-dates .cart-list .quantity {
   float: right;
   width: 24px;
   height: 24px;
@@ -203,3 +228,125 @@ border-bottom: 1px solid #ddd;
   border-radius: 100%;
   margin: -3px;
 }
+
+.place-list {
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
+
+.place-img {
+  display: block;
+  width: 100%;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-body {
+  padding: 16px;
+  font-size: 15px;
+  background-color: white;
+}
+
+.place-heading {
+  font-size: 15px;
+}
+
+.place-time {
+  padding: 15px 0;
+  opacity: 0.6;
+}
+
+.place-des {
+  padding: 15px 0;
+}
+
+.place-buy-btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.place-buy-btn:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Contact */
+.contact-content{
+  padding: 25px 0;
+}
+
+.contact-info{
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"]{
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form{
+  font-size: 15px;
+}
+
+.contact-form .form-control{
+  padding: 10px;
+  border: solid 1px #ccc;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-submit{
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 10px 16px;
+  float: right;
+}
+
+i.form-control:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Footer */
+#footer{
+  padding: 64px 16px;
+}
+
+.map-section img{
+  width: 100%;
+  filter: grayscale(50%);
+}
+
+.social-list{
+  text-align: center;
+  font-size: 24px;
+}
+
+.social-list a{
+color: rgba(0, 0, 0, 0.6);
+text-decoration: none;
+}
+
+.social-list a:hover{
+  opacity: 0.6;
+}
+
+.copyright{
+text-align: center;
+color: rgba(0, 0, 0, 0.6);
+padding: 15px 0;
+}
+
+
+
+
+
